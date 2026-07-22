@@ -2,14 +2,14 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "ucc27517"
+	(symbol "TPT1334"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 0 0 0)
+			(at -5.842 9.398 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18,8 +18,8 @@
 				)
 			)
 		)
-		(property "Value" "UCC27517A"
-			(at 0 0 0)
+		(property "Value" "TPT1334"
+			(at -6.096 7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28,7 +28,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-8"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61,10 +61,21 @@
 				)
 			)
 		)
-		(symbol "ucc27517_1_1"
+		(property "ki_fp_filters" "SOP-8_* SOT-23-8"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "TPT1334_1_1"
 			(rectangle
-				(start -5.08 3.81)
-				(end 5.08 -3.81)
+				(start -6.35 6.35)
+				(end 6.35 -6.35)
 				(stroke
 					(width 0)
 					(type solid)
@@ -73,10 +84,10 @@
 					(type background)
 				)
 			)
-			(pin power_in line
-				(at -7.62 2.54 0)
+			(pin input line
+				(at -8.89 3.81 0)
 				(length 2.54)
-				(name "VDD"
+				(name "TXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -92,7 +103,7 @@
 				)
 			)
 			(pin power_in line
-				(at -7.62 0 0)
+				(at 0 -8.89 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -109,10 +120,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -7.62 -2.54 0)
+			(pin power_in line
+				(at 0 8.89 270)
 				(length 2.54)
-				(name "IN+"
+				(name "VCC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -127,10 +138,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at 7.62 -2.54 180)
+			(pin output line
+				(at -8.89 1.27 0)
 				(length 2.54)
-				(name "IN-"
+				(name "RXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -145,10 +156,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 7.62 2.54 180)
+			(pin input line
+				(at -8.89 -1.27 0)
 				(length 2.54)
-				(name "OUT"
+				(name "SHDN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -156,6 +167,60 @@
 					)
 				)
 				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 8.89 -1.27 180)
+				(length 2.54)
+				(name "CANL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 8.89 1.27 180)
+				(length 2.54)
+				(name "CANH"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -8.89 -3.81 0)
+				(length 2.54)
+				(name "STB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
