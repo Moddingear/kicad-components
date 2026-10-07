@@ -197,7 +197,7 @@
 		(uuid "810ee5bb-3aec-4e61-bece-e209ca208796")
 	)
 	(embedded_fonts no)
-	(model "/home/moddingear/Documents/kicad/Common/footprints/jst.pretty/S2B-ZR-SM4A-TF.STEP"
+	(model "${COMMON_LIB_DIR}/footprints/jst.pretty/S2B-ZR-SM4A-TF.STEP"
 		(offset
 			(xyz 0.75 0 0)
 		)
